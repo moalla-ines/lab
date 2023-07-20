@@ -63,27 +63,15 @@ if(isset($_POST['submit'])){
   $prenom = mysqli_real_escape_string($con,$_POST['prenom']);
   $tel = mysqli_real_escape_string($con,$_POST['tel']);
   $email = mysqli_real_escape_string($con,$_POST['email']);
-  $grade = mysqli_real_escape_string($con,$_POST['grade']);
-  $diplome = mysqli_real_escape_string($con,$_POST['diplome']);
   $date = $_POST['date'];
-  $datediplome = $_POST['datediplome'];
   $cin = $_POST['cin'];
-  $passport = $_POST['numpassport'];
-  $cnrps = $_POST['cnrps'];
-  $specialite = mysqli_real_escape_string($con,$_POST['specialite']);
-  $ftadmin =mysqli_real_escape_string($con, $_POST['ftadmin']);
-  $scopus = $_POST['scopus'];
-  $orcid = $_POST['orcid'];
-  $telfax = $_POST['telfax'];
-  $gender = $_POST['gender'];
-  $image = addslashes(file_get_contents($_FILES['photo']['tmp_name']));
   $verify_token=md5(rand());
 
   $uppercase = preg_match('@[A-Z]@', $mdp);
   $lowercase = preg_match('@[a-z]@', $mdp);
   $number    = preg_match('@[0-9]@', $mdp);
  
-  $select = mysqli_query($con, "SELECT * FROM lrsetitmembre WHERE email = '$email'");
+  $select = mysqli_query($con, "SELECT * FROM lrsetitutilisateur WHERE email = '$email'");
  
     if((mysqli_num_rows($select))>0) {
 
@@ -94,13 +82,13 @@ if(isset($_POST['submit'])){
       
       $_SESSION['erreur']=" Mot de passe invalide ! Merci de respecter les conditions mises pour le mot de passe.";
       
-      header('Location:ajout_membre.php');
+      header('Location:ajout_user.php');
        
      
     }else{
 
-      $query=" INSERT INTO `lrsetitmembre`(`nom`, `prenom`, `cin`, `passport`, `cnrps`, `genre`, `grade`, `email`, `mot de passe`, `specialite`, `diplome`, `date de naissance`, `fonction administrative`, `h-index`, `orcid`, `tel mobile`, `tel fax`, `date du dernier diplome` ,`image`,`verify_token`) 
-      VALUES ('$nom','$prenom','$cin','$passport','$cnrps','$gender','$grade','$email','$mdp','$specialite','$diplome','$date','$ftadmin','$scopus','$orcid','$tel','$telfax','$datediplome','$image','$verify_token')";
+      $query=" INSERT INTO `lrsetitutilisateur`(`nom`, `prenom`, `cin`, `email`, `mot de passe`, `date de naissance`, `telephone`,`verify_token`) 
+      VALUES ('$nom','$prenom','$cin','$email','$mdp','$date','$tel','$verify_token')";
 
       $query_run=mysqli_query($con, $query);
 
@@ -111,7 +99,7 @@ if(isset($_POST['submit'])){
       
       $_SESSION['status']="Compte crée avec succès ! Veuillez vérfier votre mail pour activer votre compte.";
       
-      header('Location:gestion_membres.php');
+      header('Location:gestion_users.php');
 
     }
 }

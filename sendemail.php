@@ -18,8 +18,8 @@ require 'vendor/autoload.php';
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'messaiamir48@gmail.com';                     //SMTP username
-    $mail->Password   = 'vujacvuglonqebzn';                               //SMTP password
+    $mail->Username   = 'inesamina96@gmail.com';                     //SMTP username
+    $mail->Password   = 'xgagjwjbqthpxkuv';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;     
     $mail->SMTPOptions = array(
@@ -32,7 +32,7 @@ require 'vendor/autoload.php';
 
   //Recipients
   $mail->setFrom($email, $name);
-  $mail->addAddress('messaiamir48@gmail.com');     //Add a recipient
+  $mail->addAddress('inesamina96@gmail.com');     //Add a recipient
  
 
   //Content

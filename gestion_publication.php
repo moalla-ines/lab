@@ -6,7 +6,7 @@
     
     
     require_once ("password-connection.php");  
-    $query="SELECT * FROM `lrsetitauteur_publication` " ;
+    $query="SELECT * FROM `lrsetitauteur_publication` WHERE `existe` = 1 " ;
     $result=mysqli_query($con,$query);
 ?>
 
