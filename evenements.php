@@ -71,13 +71,13 @@ if(!isset($_SESSION))
 
 
 require_once ("password-connection.php");  
-$query="SELECT * FROM `conference_manifestation` " ;
-$result_conference_manifestation=mysqli_query($con,$query_conference_manifestation);
+$query="SELECT * FROM `lrsetitconference_manifestation` " ;
+$result=mysqli_query($con,$query);
 
-$query_formation="SELECT * FROM `formation` " ;
+$query_formation="SELECT * FROM `lrsetitformation` " ;
 $result_formation=mysqli_query($con,$query_formation);
 
-$query_evenement="SELECT * FROM `evenement` " ;
+$query_evenement="SELECT * FROM `lrsetitevenement` " ;
 $result_evenement=mysqli_query($con,$query_evenement);
 ?>
   

@@ -112,7 +112,7 @@ if(isset($_SESSION['status'])){
 
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="image/1.png" alt="image" class="d-block" style="width:100%">
+    <img src="http://www.setit.rnu.tn/Lab-SETIT/image/1.png" alt="image" class="d-block" style="width:100%">
   </div>
   <div class="carousel-item">
     <img src="image/2.png" alt="image" class="d-block" style="width:100%">
