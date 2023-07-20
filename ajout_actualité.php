@@ -45,7 +45,7 @@
                             <textarea  class="form-control mt-2" name="description" cols="20" rows="5" placeholder="Description"></textarea>
                         </div>
                         <div class=" form-group">
-                            <label class="fw-bold">Image</label>
+                            <label class="fw-bold">Images</label>
                             <input type="file" name="photo" class="form-control mt-2"  >
                         </div>
                         <div class="d-flex justify-content-center">
