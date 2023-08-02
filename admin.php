@@ -84,12 +84,12 @@
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>Gestion</h3>
-                <p>Production scientifique</p>
+                <p>formation</p>
               </div>
               <div class="icon">
                 <i class="nav-icon fas fa-copy"></i>
               </div>
-              <a href="ajout_publication.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="ajout_formation.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-6">
@@ -102,14 +102,14 @@
               <div class="icon">
                 <i class="nav-icon fas fa-copy"></i>
               </div>
-              <a href="ajout_publication.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="ajout_cooperation.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
             </div>
             
           </div>
           
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning  ">
+            <div class="small-box bg-success  ">
               <div class="inner">
                 <h3>Gestion</h3>
                 <p>Manifestation</p>
@@ -117,7 +117,7 @@
               <div class="icon">
               <i class="fa fa-university" aria-hidden="true"></i>
               </div>
-              <a href="ajout_publication.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="ajout_manifestation.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
             </div>
             
           </div>
@@ -131,9 +131,29 @@
               <div class="icon">
               <i class="fa fa-university" aria-hidden="true"></i>
               </div>
-              <a href="ajout_publication.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="ajout_événements.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+
+            </div>
+          
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-primary  ">
+              <div class="inner">
+                <h3>Gestion</h3>
+                <p>domaine</p>
+              </div>
+              <div class="icon">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              </div>
+              <a href="ajout_domaine.php" class="small-box-footer">Gestion <i class="fas fa-arrow-circle-right"></i></a>
             </div>
             
+          </div>
+
+
+          
+          </div><!-- /.col -->
           </div>
           <!-- ./col -->
         </div>

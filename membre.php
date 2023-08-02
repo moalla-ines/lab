@@ -54,7 +54,7 @@ if(!isset($_SESSION))
 
 require_once ("password-connection.php");  
 
-$query="SELECT * FROM `lrsetitmembre` WHERE `verify_status`='1' AND `approve`='1'" ;
+$query="SELECT * FROM `lrsetitmembre` WHERE `verify_status`='1' AND `approve`='1' " ;
 $result=mysqli_query($con,$query);
 ?>
 <?php

@@ -118,9 +118,13 @@
             <li class="nav-item">
               <a href="gestion_actualité.php" class="nav-link">
                    <i class="nav-icon fa fa-check-square" aria-hidden="true"></i>  <p> Gestion Actualités</p>
+                   </a>
+            </li>
+            <li class="nav-item">
+              <a href="gestion_users.php" class="nav-link">
+                 <i class="nav-icon fa fa-users" aria-hidden="true"></i> <p> Gestion Utilisateur</p>
               </a>
             </li>
-            
       </nav>
       <!-- /.sidebar-menu -->
     </div>

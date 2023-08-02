@@ -4,7 +4,7 @@
     include('includes/sidebar.php');
     
     require_once ("password-connection.php");  
-    $query="SELECT * FROM `lrsetitmembre` " ;
+    $query="SELECT * FROM `lrsetitmembre` WHERE `existe` =1 " ;
     $result=mysqli_query($con,$query);
 ?>
 

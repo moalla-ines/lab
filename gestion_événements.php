@@ -6,7 +6,7 @@
     
     
     require_once ("password-connection.php");  
-    $query="SELECT * FROM `lrsetitevenement` " ;
+    $query="SELECT * FROM `lrsetitevenement`"  ;
     $result=mysqli_query($con,$query);
 ?>
 
